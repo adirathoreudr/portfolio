@@ -143,9 +143,9 @@ export default function Vinyl() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           aria-label="Open the liner notes — what's spinning on Spotify"
-          className="block cursor-pointer rounded-full text-[2.2rem] sm:text-[2.6rem]"
+          className="block cursor-pointer rounded-full text-[2.7rem] sm:text-[3.2rem]"
         >
-          <Disc spinning fast={hovered} className="size-32 sm:size-40" />
+          <Disc spinning fast={hovered} className="size-40 sm:size-52" />
         </motion.button>
         <p className="mt-3 text-center text-[9px] font-bold uppercase tracking-[0.3em] text-smoke">
           Now spinning · tap the record
