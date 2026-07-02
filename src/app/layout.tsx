@@ -23,6 +23,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://adiisingh.xyz"),
   title: "ADITYA RATHORE — The Developer Issue",
   description:
     "Full Stack Developer. Web3 Developer. DevOps Engineer. Cloud architecture, trustless protocols, and infrastructure that never asks for credit.",
@@ -35,11 +36,13 @@ export const metadata: Metadata = {
     "portfolio",
   ],
   authors: [{ name: "Aditya Rathore", url: "https://github.com/adirathoreudr" }],
+  alternates: { canonical: "/" },
   openGraph: {
     title: "ADITYA RATHORE — The Developer Issue",
     description:
       "Full Stack Developer. Web3 Developer. DevOps Engineer. An editorial portfolio, № 001.",
     type: "website",
+    url: "https://adiisingh.xyz",
     siteName: "The Developer Issue",
   },
   twitter: {
