@@ -10,8 +10,9 @@ const navLinks = [
   { label: "Contact", target: "#epilogue" },
 ];
 
-function useClock(timeZone: string) {
+function useClock(timeZone: string, withZoneLabel = false) {
   const [time, setTime] = useState("--:--");
+  const [zoneLabel, setZoneLabel] = useState("");
   useEffect(() => {
     const fmt = new Intl.DateTimeFormat("en-GB", {
       timeZone,
@@ -19,18 +20,29 @@ function useClock(timeZone: string) {
       minute: "2-digit",
       hour12: false,
     });
-    const tick = () => setTime(fmt.format(new Date()));
+    const zoneFmt = withZoneLabel
+      ? new Intl.DateTimeFormat("en-US", { timeZone, timeZoneName: "short" })
+      : null;
+    const tick = () => {
+      setTime(fmt.format(new Date()));
+      if (zoneFmt) {
+        const part = zoneFmt
+          .formatToParts(new Date())
+          .find((p) => p.type === "timeZoneName");
+        if (part) setZoneLabel(part.value);
+      }
+    };
     tick();
     const id = setInterval(tick, 15000);
     return () => clearInterval(id);
-  }, [timeZone]);
-  return time;
+  }, [timeZone, withZoneLabel]);
+  return { time, zoneLabel };
 }
 
 export default function Navbar() {
   const lenis = useLenis();
-  const ist = useClock("Asia/Kolkata");
-  const nyc = useClock("America/New_York");
+  const { time: ist } = useClock("Asia/Kolkata");
+  const { time: nyc, zoneLabel: nycZone } = useClock("America/New_York", true);
 
   const go = (target: string) => (e: React.MouseEvent) => {
     e.preventDefault();
@@ -78,7 +90,7 @@ export default function Navbar() {
           </span>
           <span className="text-paper/25">/</span>
           <span>
-            EDT <span className="text-paper/85">{nyc}</span>
+            {nycZone || "EDT"} <span className="text-paper/85">{nyc}</span>
           </span>
           <span className="size-1.5 animate-pulse rounded-full bg-crimson" />
         </div>
