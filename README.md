@@ -1,6 +1,6 @@
 # ADITYA RATHORE — The Developer Issue, № 001
 
-**Live: [portfolio-five-eta-73.vercel.app](https://portfolio-five-eta-73.vercel.app)**
+**Live: [adirathoreportfolio.vercel.app](https://adirathoreportfolio.vercel.app)**
 
 An editorial-magazine portfolio. Deep crimson, pitch black, stark white.
 Playfair Display for the drama, Inter for the facts.
