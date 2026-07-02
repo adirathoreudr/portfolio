@@ -24,6 +24,7 @@ type TornEdgeProps = {
   fill: string;
   flip?: boolean;
   underFill?: string;
+  bg?: string;
   className?: string;
 };
 
@@ -31,13 +32,17 @@ export default function TornEdge({
   fill,
   flip = false,
   underFill = "#e8e4da",
+  bg,
   className = "",
 }: TornEdgeProps) {
   return (
     <div
       aria-hidden
       className={`relative -my-px w-full overflow-hidden leading-none ${className}`}
-      style={flip ? { transform: "scaleY(-1)" } : undefined}
+      style={{
+        ...(flip ? { transform: "scaleY(-1)" } : undefined),
+        ...(bg ? { backgroundColor: bg } : undefined),
+      }}
     >
       <svg
         viewBox={`0 0 ${W} ${H}`}
