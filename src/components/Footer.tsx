@@ -36,7 +36,7 @@ export default function Footer() {
             <span>Section IV</span>
             <span>The epilogue</span>
           </div>
-          <h2 className="font-masthead mt-4 text-[clamp(3.2rem,11.5vw,10.5rem)] leading-[0.85] text-ink">
+          <h2 className="font-masthead mt-4 text-[clamp(2.6rem,9vw,8rem)] leading-[0.85] text-ink">
             EVERY STORY
             <br />
             <span className="text-paper">NEEDS A SEQUEL.</span>

@@ -93,12 +93,12 @@ export default function Hero() {
         <div className="mt-8 sm:mt-12">
           <MastheadLine
             text="ADITYA"
-            className="text-ink text-[clamp(4.2rem,16.5vw,15rem)]"
+            className="text-ink text-[clamp(3.4rem,13vw,11.5rem)]"
             index={0}
           />
           <MastheadLine
             text="RATHORE"
-            className="text-paper text-[clamp(3.6rem,14.2vw,13rem)]"
+            className="text-paper text-[clamp(2.9rem,11.2vw,10rem)]"
             index={1}
           />
         </div>
@@ -123,7 +123,7 @@ export default function Hero() {
             variants={fade}
             initial="hidden"
             animate="show"
-            className="max-w-xl font-serif text-2xl italic leading-snug sm:text-3xl lg:text-4xl"
+            className="max-w-xl font-serif text-xl italic leading-snug sm:text-2xl lg:text-3xl"
           >
             He builds full-stack systems, trustless protocols, and
             infrastructure that never asks for credit&nbsp;—{" "}

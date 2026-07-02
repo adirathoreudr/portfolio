@@ -84,7 +84,7 @@ function TiltPanel({ project }: { project: Project }) {
           <span>{project.year}</span>
         </div>
         <div className="relative">
-          <h3 className="font-masthead text-[clamp(2.8rem,7.5vw,7rem)] leading-[0.85]">
+          <h3 className="font-masthead text-[clamp(2.3rem,6vw,5.5rem)] leading-[0.85]">
             {project.name}
           </h3>
           <p className={`mt-4 max-w-md font-serif text-base italic sm:text-xl ${s.tagline}`}>
@@ -190,7 +190,7 @@ export default function Projects() {
             <span>Section II</span>
             <span>Four exhibits, admitted into evidence</span>
           </div>
-          <h2 className="font-masthead mt-4 text-[clamp(3.5rem,12vw,11rem)] leading-[0.85] text-paper">
+          <h2 className="font-masthead mt-4 text-[clamp(2.8rem,9.5vw,8.5rem)] leading-[0.85] text-paper">
             THE <span className="text-outline">FEATURES</span>
           </h2>
         </motion.header>

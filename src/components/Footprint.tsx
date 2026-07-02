@@ -146,7 +146,7 @@ export default function Footprint({
             <span>Section III</span>
             <span>Proof of work, in both senses</span>
           </div>
-          <h2 className="font-masthead mt-4 text-[clamp(3.5rem,12vw,11rem)] leading-[0.85] text-ink">
+          <h2 className="font-masthead mt-4 text-[clamp(2.8rem,9.5vw,8.5rem)] leading-[0.85] text-ink">
             THE <span className="text-outline-ink">RECORD</span>
           </h2>
         </motion.header>
