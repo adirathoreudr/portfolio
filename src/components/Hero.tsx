@@ -125,7 +125,7 @@ export default function Hero() {
             animate="show"
             className="max-w-xl font-serif text-xl italic leading-snug sm:text-2xl lg:text-3xl"
           >
-            He builds full-stack systems, trustless protocols, and
+            Building full-stack systems, trustless protocols, and
             infrastructure that never asks for credit&nbsp;—{" "}
             <span className="text-ink">
               the kind of work you only notice when it isn&apos;t there.
@@ -165,18 +165,8 @@ export default function Hero() {
           variants={fade}
           initial="hidden"
           animate="show"
-          className="mt-12 flex items-end justify-between"
+          className="mt-12 flex items-end justify-end"
         >
-          <div className="flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.3em]">
-            <motion.span
-              animate={{ y: [0, 6, 0] }}
-              transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-              aria-hidden
-            >
-              ↓
-            </motion.span>
-            Scroll
-          </div>
           <p className="max-w-[240px] text-right font-serif text-sm italic leading-snug text-ink sm:max-w-xs sm:text-base">
             &ldquo;The first rule of good infrastructure&nbsp;— it never
             speaks of itself.&rdquo;

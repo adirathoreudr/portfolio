@@ -23,9 +23,9 @@ export const stack = [
 ];
 
 export const currently = {
-  title: "What he's up to these days",
+  title: "What's brewing these days",
   paragraphs: [
-    "Somewhere between an EKS cluster and a Solana validator, he is teaching AI agents to run production infrastructure without waking anyone up. The pager stays quiet. That is the whole point.",
+    "Somewhere between an EKS cluster and a Solana validator, teaching AI agents to run production infrastructure without waking anyone up. The pager stays quiet. That is the whole point.",
     "The current obsession: agentic DevOps — incident response that reasons before it acts, and zero-knowledge state that proves without revealing. Further up and further in.",
   ],
   status: "Open to select collaborations — Winter MMXXVI",
