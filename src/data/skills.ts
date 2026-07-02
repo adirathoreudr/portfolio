@@ -14,19 +14,20 @@ export const marqueeItems = [
 ];
 
 export const stack = [
-  { group: "Languages", items: ["TypeScript", "Python", "Rust", "Solidity", "Go", "SQL"] },
-  { group: "Frontend", items: ["React 19", "Next.js 15", "Tailwind CSS", "Framer Motion", "Zustand"] },
+  { group: "Languages", items: ["C++", "C", "TypeScript", "JavaScript", "Python", "Rust", "Solidity", "SQL"] },
+  { group: "Frontend", items: ["React", "Next.js", "HTML", "CSS", "Tailwind CSS", "Framer Motion"] },
   { group: "Backend", items: ["Node.js", "Express", "FastAPI", "PostgreSQL", "Redis"] },
   { group: "Web3", items: ["Anchor", "Light Protocol", "Ethers.js", "SPL Token-2022", "Hardhat"] },
-  { group: "DevOps & Cloud", items: ["AWS", "EKS", "Terraform", "Docker", "GitHub Actions", "ArgoCD"] },
+  { group: "Cloud, DevOps & Security", items: ["AWS", "GCP", "Docker", "Kubernetes", "Terraform", "Jenkins", "GitHub Actions", "Git", "Cloud Security", "Prometheus", "Grafana"] },
   { group: "AI / ML", items: ["LangChain", "FAISS", "Prompt Engineering", "ElevenLabs", "NVIDIA NIM"] },
+  { group: "Beyond the Terminal", items: ["Social Media Management", "Sales", "Marketing Automation", "Digital Marketing", "Content Creation"] },
 ];
 
 export const currently = {
   title: "What's brewing these days",
   paragraphs: [
-    "Somewhere between an EKS cluster and a Solana validator, teaching AI agents to run production infrastructure without waking anyone up. The pager stays quiet. That is the whole point.",
-    "The current obsession: agentic DevOps — incident response that reasons before it acts, and zero-knowledge state that proves without revealing. Further up and further in.",
+    "Shipping code by day, collecting boarding passes by night — always one timezone ahead of the jet lag and one commit behind the next idea. Have laptop, will travel.",
+    "Off the clock? Deep in a peak-TV binge or running the cult classics back for the hundredth time, still catching frames I missed the last ninety-nine. Roll credits, then back to the terminal. Further up and further in.",
   ],
-  status: "Open to select collaborations — Winter MMXXVI",
+  status: "Open to Job opportunities",
 };

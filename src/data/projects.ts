@@ -46,27 +46,11 @@ export const projects: Project[] = [
     ],
     stack: ["Python", "LangChain", "FAISS", "EKS", "Terraform", "Redis"],
     href: "https://github.com/adirathoreudr/aiops-incident-commander",
+    live: "https://aiops-incident-commander.vercel.app",
     accent: "paper",
   },
   {
     index: "III",
-    name: "ZK EXTENSIONS",
-    tagline: "A wardrobe between two worlds that were never meant to touch.",
-    category: "Solana / Zero-Knowledge",
-    year: "2026",
-    description:
-      "An AI-agent skill that bridges Light Protocol's ZK Compression with SPL Token-2022 Transfer Hooks — two primitives that couldn't speak until now.",
-    bullets: [
-      "Progressive-context skill architecture: a SKILL.md router selectively loads compressed-PDA templates, hook implementations, and mandatory security guardrails per query.",
-      "Reconciles off-chain compressed state (Photon indexer validity proofs, ~99% rent reduction) with synchronous CPI transfer hooks that have no RPC access.",
-      "Hardens agents against stale-root replay and double-spend across the bridge, with Rust/Anchor templates and a local Photon + prover test environment.",
-    ],
-    stack: ["Rust", "Anchor", "Light Protocol", "Photon", "TypeScript"],
-    href: "https://github.com/adirathoreudr/solana-zk-extensions-skill",
-    accent: "ink",
-  },
-  {
-    index: "IV",
     name: "GHOST",
     tagline: "It doesn't coach you. It becomes you.",
     category: "Realtime Voice AI",
@@ -80,6 +64,23 @@ export const projects: Project[] = [
     ],
     stack: ["React 18", "Node.js", "ElevenLabs", "NVIDIA NIM", "Zustand"],
     href: "https://github.com/adirathoreudr/ghostProject",
-    accent: "crimson",
+    accent: "ink",
+  },
+  {
+    index: "IV",
+    name: "ZK EXTENSIONS",
+    tagline: "A wardrobe between two worlds that were never meant to touch.",
+    category: "AI Agent Skill · Solana ZK",
+    year: "2026",
+    description:
+      "Not a product — a reusable AI-agent skill that bridges Light Protocol's ZK Compression with SPL Token-2022 Transfer Hooks, two primitives that couldn't speak until now.",
+    bullets: [
+      "Progressive-context skill architecture: a SKILL.md router selectively loads compressed-PDA templates, hook implementations, and mandatory security guardrails per query.",
+      "Reconciles off-chain compressed state (Photon indexer validity proofs, ~99% rent reduction) with synchronous CPI transfer hooks that have no RPC access.",
+      "Hardens agents against stale-root replay and double-spend across the bridge, with Rust/Anchor templates and a local Photon + prover test environment.",
+    ],
+    stack: ["Rust", "Anchor", "Light Protocol", "Photon", "TypeScript"],
+    href: "https://github.com/adirathoreudr/solana-zk-extensions-skill",
+    accent: "paper",
   },
 ];

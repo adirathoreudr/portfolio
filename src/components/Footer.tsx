@@ -25,9 +25,9 @@ export default function Footer() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-24 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-masthead text-[30vw] leading-none text-ink/10"
+        className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-masthead text-[13.5vw] leading-none text-ink/10"
       >
-        FIN
+        TUTTO PASSA
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1600px]">
@@ -53,14 +53,14 @@ export default function Footer() {
             href={links.calendly}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-baseline gap-4 border-4 border-ink bg-ink px-8 py-5 transition-colors duration-300 hover:bg-transparent sm:px-12 sm:py-6"
+            className="group inline-flex items-baseline gap-2.5 border-2 border-ink bg-ink px-5 py-3 transition-colors duration-300 hover:bg-transparent sm:px-6 sm:py-3.5"
           >
-            <span className="font-masthead text-2xl text-paper transition-colors duration-300 group-hover:text-ink sm:text-4xl">
+            <span className="font-masthead text-lg text-paper transition-colors duration-300 group-hover:text-ink sm:text-xl">
               Book a 30-min call
             </span>
             <span
               aria-hidden
-              className="font-serif text-xl italic text-crimson transition-transform duration-300 group-hover:translate-x-2 sm:text-2xl"
+              className="font-serif text-sm italic text-crimson transition-transform duration-300 group-hover:translate-x-1 sm:text-base"
             >
               via Calendly →
             </span>

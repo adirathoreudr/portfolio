@@ -70,12 +70,12 @@ function MastheadLine({
 
 export default function Hero() {
   return (
-    <section className="grain relative min-h-svh overflow-hidden bg-blood text-paper">
+    <section id="top" className="grain relative min-h-svh overflow-hidden bg-blood text-paper">
       <div className="pointer-events-none absolute -right-24 top-1/3 select-none font-masthead text-[28rem] leading-none text-ink/10 max-lg:hidden">
         №1
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-svh max-w-[1600px] flex-col px-5 pb-10 pt-6 sm:px-10 sm:pt-8">
+      <div className="relative z-10 mx-auto flex min-h-svh max-w-[1600px] flex-col px-5 pb-10 pt-20 sm:px-10 sm:pt-24">
         <motion.header
           custom={0}
           variants={fade}
