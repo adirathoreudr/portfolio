@@ -24,7 +24,30 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "ADITYA RATHORE — The Developer Issue",
   description:
-    "Full Stack Developer. Web3 Developer. DevOps Engineer. An editorial portfolio.",
+    "Full Stack Developer. Web3 Developer. DevOps Engineer. Cloud architecture, trustless protocols, and infrastructure that never asks for credit.",
+  keywords: [
+    "Aditya Rathore",
+    "Full Stack Developer",
+    "Web3 Developer",
+    "DevOps Engineer",
+    "AWS Certified Solutions Architect",
+    "portfolio",
+  ],
+  authors: [{ name: "Aditya Rathore", url: "https://github.com/adirathoreudr" }],
+  openGraph: {
+    title: "ADITYA RATHORE — The Developer Issue",
+    description:
+      "Full Stack Developer. Web3 Developer. DevOps Engineer. An editorial portfolio, № 001.",
+    type: "website",
+    siteName: "The Developer Issue",
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@adirathoreudr",
+    title: "ADITYA RATHORE — The Developer Issue",
+    description:
+      "Full Stack Developer. Web3 Developer. DevOps Engineer. An editorial portfolio, № 001.",
+  },
 };
 
 export const viewport: Viewport = {
