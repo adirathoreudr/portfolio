@@ -2,6 +2,8 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Projects from "@/components/Projects";
 import Footprint from "@/components/Footprint";
+import Footer from "@/components/Footer";
+import FlappyTerminal from "@/components/FlappyTerminal";
 import TornEdge from "@/components/TornEdge";
 import { getContributions } from "@/lib/contributions";
 
@@ -21,6 +23,9 @@ export default async function Home() {
         total={contributions.total}
         live={contributions.live}
       />
+      <TornEdge fill="#e8e4da" bg="#7a0e12" underFill="#0a0a09" />
+      <Footer />
+      <FlappyTerminal />
     </main>
   );
 }
