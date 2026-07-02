@@ -26,7 +26,7 @@ export const stack = [
 export const currently = {
   title: "What's brewing these days",
   paragraphs: [
-    "Shipping code by day, collecting boarding passes by night — always one timezone ahead of the jet lag and one commit behind the next idea. Have laptop, will travel.",
+    "Shipping code by day, collecting boarding passes by night — always one timezone ahead of the jet lag and one commit behind the next idea.",
     "Off the clock? Deep in a peak-TV binge or running the cult classics back for the hundredth time, still catching frames I missed the last ninety-nine. Roll credits, then back to the terminal. Further up and further in.",
   ],
   status: "Open to Job opportunities",

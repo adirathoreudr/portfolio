@@ -177,7 +177,7 @@ function Spread({ project, i }: { project: Project; i: number }) {
 
 export default function Projects() {
   return (
-    <section id="works" className="relative bg-ink px-5 py-24 sm:px-10 sm:py-32">
+    <section id="works" className="scroll-mt-14 relative bg-ink px-5 py-24 sm:px-10 sm:py-32">
       <div className="mx-auto max-w-[1600px]">
         <motion.header
           initial={{ opacity: 0, y: 40 }}

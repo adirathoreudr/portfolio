@@ -35,14 +35,16 @@ export default function Navbar() {
   const go = (target: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     if (target === "#top") {
-      if (lenis) lenis.scrollTo(0);
+      if (lenis) lenis.scrollTo(0, { force: true });
       else window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
     const el = document.querySelector(target);
     if (!el) return;
-    if (lenis) lenis.scrollTo(el as HTMLElement, { offset: -64 });
-    else el.scrollIntoView({ behavior: "smooth" });
+    const currentScroll = lenis ? lenis.scroll : window.scrollY;
+    const top = el.getBoundingClientRect().top + currentScroll - 56;
+    if (lenis) lenis.scrollTo(top, { force: true, duration: 1.3 });
+    else window.scrollTo({ top, behavior: "smooth" });
   };
 
   return (
@@ -76,7 +78,7 @@ export default function Navbar() {
           </span>
           <span className="text-paper/25">/</span>
           <span>
-            NYC <span className="text-paper/85">{nyc}</span>
+            EDT <span className="text-paper/85">{nyc}</span>
           </span>
           <span className="size-1.5 animate-pulse rounded-full bg-crimson" />
         </div>

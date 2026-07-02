@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import type { ContributionDay } from "@/lib/contributions";
 import { stack, currently } from "@/data/skills";
+import Vinyl from "@/components/Vinyl";
 
 const cellColors = [
   "bg-ink/8",
@@ -138,7 +139,7 @@ export default function Footprint({
   return (
     <section
       id="record"
-      className="grain relative bg-bone px-5 py-24 text-ink sm:px-10 sm:py-32"
+      className="grain scroll-mt-14 relative bg-bone px-5 py-24 text-ink sm:px-10 sm:py-32"
     >
       <div className="mx-auto max-w-[1600px]">
         <motion.header {...reveal} className="mb-16 sm:mb-20">
@@ -146,9 +147,12 @@ export default function Footprint({
             <span>Section III</span>
             <span>Proof of work, in both senses</span>
           </div>
-          <h2 className="font-masthead mt-4 text-[clamp(2.8rem,9.5vw,8.5rem)] leading-[0.85] text-ink">
-            THE <span className="text-outline-ink">RECORD</span>
-          </h2>
+          <div className="mt-4 flex flex-wrap items-end justify-between gap-x-12 gap-y-10">
+            <h2 className="font-masthead text-[clamp(2.8rem,9.5vw,8.5rem)] leading-[0.85] text-ink">
+              THE <span className="text-outline-ink">RECORD</span>
+            </h2>
+            <Vinyl />
+          </div>
         </motion.header>
 
         <CommitGarden days={days} total={total} live={live} />

@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer
       id="epilogue"
-      className="grain relative overflow-hidden bg-blood px-5 pb-16 pt-24 text-paper sm:px-10 sm:pt-32"
+      className="grain scroll-mt-14 relative overflow-hidden bg-blood px-5 pb-16 pt-24 text-paper sm:px-10 sm:pt-32"
     >
       <div
         aria-hidden
@@ -103,8 +103,8 @@ export default function Footer() {
             © MMXXVI Aditya Rathore — The Developer Issue, № 001
           </p>
           <p className="max-w-xs text-right font-serif text-sm italic text-ink sm:text-base">
-            Set in Playfair Display &amp; Inter. No paper was torn in the
-            making. The boat, however, is real.
+            Set in Playfair Display &amp; Inter. No Vogue magazines were
+            harmed in the making of this portfolio.
           </p>
         </motion.div>
       </div>
