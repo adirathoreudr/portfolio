@@ -25,7 +25,7 @@ export default function Footer() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-masthead text-[13.5vw] leading-none text-ink/10"
+        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-masthead text-[11.5vw] leading-none text-ink/10 sm:-bottom-8 sm:text-[13.5vw]"
       >
         TUTTO PASSA
       </div>

@@ -7,6 +7,7 @@ import {
   useAnimationFrame,
   useMotionValue,
 } from "framer-motion";
+import { useLenis } from "lenis/react";
 import type { SpotifyPayload } from "@/lib/spotify";
 
 type Note = { id: number; char: string; x: number; drift: number; dur: number; size: number };
@@ -67,6 +68,7 @@ function TrackRow({ title, artist, art, url, index }: { title: string; artist: s
 }
 
 export default function Vinyl() {
+  const lenis = useLenis();
   const [hovered, setHovered] = useState(false);
   const [open, setOpen] = useState(false);
   const [notes, setNotes] = useState<Note[]>([]);
@@ -108,12 +110,14 @@ export default function Vinyl() {
     const onKey = (e: KeyboardEvent) => e.code === "Escape" && setOpen(false);
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
+    lenis?.stop();
     return () => {
       clearInterval(t);
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
+      lenis?.start();
     };
-  }, [open, refresh]);
+  }, [open, refresh, lenis]);
 
   return (
     <>
@@ -187,7 +191,10 @@ export default function Vinyl() {
                 </div>
               </div>
 
-              <div className="grain relative flex-1 overflow-y-auto px-5 py-5 sm:px-7 sm:py-6">
+              <div
+                data-lenis-prevent
+                className="grain relative flex-1 touch-pan-y overflow-y-auto overscroll-contain px-5 py-5 sm:px-7 sm:py-6"
+              >
                 {!data ? (
                   <div className="flex flex-col items-center gap-4 py-16">
                     <Disc spinning fast className="size-16 text-[0.8rem]" />

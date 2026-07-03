@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useLenis } from "lenis/react";
 
 const W = 480;
 const H = 300;
@@ -40,6 +41,7 @@ function freshState(): GameState {
 }
 
 export default function FlappyTerminal() {
+  const lenis = useLenis();
   const [open, setOpen] = useState(false);
   const [score, setScore] = useState(0);
   const [best, setBest] = useState(0);
@@ -78,11 +80,13 @@ export default function FlappyTerminal() {
     };
     window.addEventListener("keydown", onKey);
     document.body.style.overflow = "hidden";
+    lenis?.stop();
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
+      lenis?.start();
     };
-  }, [open, flap]);
+  }, [open, flap, lenis]);
 
   useEffect(() => {
     if (!open) return;

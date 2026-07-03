@@ -75,7 +75,7 @@ export default function Hero() {
         №1
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-svh max-w-[1600px] flex-col px-5 pb-10 pt-20 sm:px-10 sm:pt-24">
+      <div className="relative z-10 mx-auto flex min-h-svh max-w-[1600px] flex-col px-5 pb-8 pt-[4.5rem] sm:px-10 sm:pt-20">
         <motion.header
           custom={0}
           variants={fade}
@@ -90,7 +90,7 @@ export default function Hero() {
           </span>
         </motion.header>
 
-        <div className="mt-8 sm:mt-12">
+        <div className="mt-6 sm:mt-8">
           <MastheadLine
             text="ADITYA"
             className="text-ink text-[clamp(3.4rem,13vw,11.5rem)]"
@@ -108,7 +108,7 @@ export default function Hero() {
           variants={fade}
           initial="hidden"
           animate="show"
-          className="mt-8 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y-2 border-ink py-3 text-[11px] font-bold uppercase tracking-[0.25em] text-ink sm:text-sm"
+          className="mt-6 flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-y-2 border-ink py-3 text-[11px] font-bold uppercase tracking-[0.25em] text-ink sm:text-sm"
         >
           <span>Full Stack Developer</span>
           <span aria-hidden className="text-paper">✦</span>
@@ -117,7 +117,7 @@ export default function Hero() {
           <span>DevOps Engineer</span>
         </motion.div>
 
-        <div className="mt-10 grid flex-1 gap-10 md:grid-cols-[1.1fr_1fr] lg:mt-14">
+        <div className="mt-8 grid flex-1 gap-8 md:grid-cols-[1.1fr_1fr] lg:mt-10">
           <motion.p
             custom={2}
             variants={fade}
@@ -165,9 +165,9 @@ export default function Hero() {
           variants={fade}
           initial="hidden"
           animate="show"
-          className="mt-12 flex items-end justify-end"
+          className="mt-6 flex items-end justify-end sm:mt-8"
         >
-          <p className="max-w-[240px] text-right font-serif text-sm italic leading-snug text-ink sm:max-w-xs sm:text-base">
+          <p className="mr-14 max-w-[240px] text-right font-serif text-sm italic leading-snug text-ink sm:mr-24 sm:max-w-xs sm:text-base">
             &ldquo;The first rule of good infrastructure&nbsp;— it never
             speaks of itself.&rdquo;
           </p>

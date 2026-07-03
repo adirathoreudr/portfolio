@@ -52,7 +52,7 @@ function TiltPanel({ project }: { project: Project }) {
   const s = accentStyles[project.accent];
 
   return (
-    <div style={{ perspective: 1200 }}>
+    <div style={{ perspective: 1200 }} className="lg:mx-auto lg:max-w-[88%]">
       <motion.a
         ref={ref}
         href={project.href}

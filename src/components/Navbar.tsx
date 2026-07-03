@@ -44,10 +44,13 @@ export default function Navbar() {
   const { time: ist } = useClock("Asia/Kolkata");
   const { time: nyc, zoneLabel: nycZone } = useClock("America/New_York", true);
 
+  const easeGlide = (t: number) =>
+    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
   const go = (target: string) => (e: React.MouseEvent) => {
     e.preventDefault();
     if (target === "#top") {
-      if (lenis) lenis.scrollTo(0, { force: true });
+      if (lenis) lenis.scrollTo(0, { force: true, duration: 1.8, easing: easeGlide });
       else window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
@@ -55,7 +58,7 @@ export default function Navbar() {
     if (!el) return;
     const currentScroll = lenis ? lenis.scroll : window.scrollY;
     const top = el.getBoundingClientRect().top + currentScroll - 56;
-    if (lenis) lenis.scrollTo(top, { force: true, duration: 1.3 });
+    if (lenis) lenis.scrollTo(top, { force: true, duration: 1.8, easing: easeGlide });
     else window.scrollTo({ top, behavior: "smooth" });
   };
 
@@ -68,7 +71,7 @@ export default function Navbar() {
           className="flex shrink-0 items-center gap-2 font-mono text-xs font-semibold uppercase tracking-[0.25em] text-paper transition-opacity hover:opacity-70"
         >
           <span className="size-2 rounded-full bg-crimson" />
-          AR<span className="text-crimson">.</span>dev
+          AR
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
