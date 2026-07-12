@@ -5,23 +5,18 @@ import { motion } from "framer-motion";
 const strengths = [
   {
     k: "01",
-    t: "Cloud architecture, certified twice over",
-    d: "AWS Solutions Architect & AI Practitioner — systems designed for the scene where everything fails.",
+    t: "Full-stack systems, built end to end",
+    d: "Frontend to database, API to edge — every layer written, wired, and shipped by the same hand.",
   },
   {
     k: "02",
     t: "Protocols that keep their promises",
-    d: "Smart contracts and ZK-compressed state — verifiable on-chain, silent off it.",
+    d: "Smart contracts and on-chain systems — trustless by design, verifiable by anyone.",
   },
   {
     k: "03",
-    t: "Pipelines that ship while the city sleeps",
-    d: "CI/CD, Kubernetes, Terraform — deployment as a quiet, repeatable ritual.",
-  },
-  {
-    k: "04",
-    t: "Incidents measured in seconds",
-    d: "AI-driven triage and remediation — no war rooms, no witnesses.",
+    t: "Infrastructure that runs while the city sleeps",
+    d: "CI/CD, containers, cloud — deployment as a quiet, repeatable ritual.",
   },
 ];
 
