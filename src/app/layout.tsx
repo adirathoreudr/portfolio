@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
@@ -74,6 +75,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
