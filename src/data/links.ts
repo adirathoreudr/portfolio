@@ -4,4 +4,5 @@ export const links = {
   linkedin: "https://www.linkedin.com/in/adityarathoreudr/",
   twitter: "https://x.com/adirathoreudr",
   calendly: "https://calendly.com/adirathoreudr",
+  resume: "https://cv.adiisingh.xyz",
 };

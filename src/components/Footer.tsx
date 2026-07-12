@@ -48,7 +48,7 @@ export default function Footer() {
           </p>
         </motion.header>
 
-        <motion.div {...reveal} className="mt-12">
+        <motion.div {...reveal} className="mt-12 flex flex-wrap gap-4">
           <a
             href={links.calendly}
             target="_blank"
@@ -63,6 +63,23 @@ export default function Footer() {
               className="font-serif text-sm italic text-crimson transition-transform duration-300 group-hover:translate-x-1 sm:text-base"
             >
               via Calendly →
+            </span>
+          </a>
+
+          <a
+            href={links.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-baseline gap-2.5 border-2 border-ink px-5 py-3 transition-colors duration-300 hover:bg-ink sm:px-6 sm:py-3.5"
+          >
+            <span className="font-masthead text-lg text-ink transition-colors duration-300 group-hover:text-paper sm:text-xl">
+              Read the résumé
+            </span>
+            <span
+              aria-hidden
+              className="font-serif text-sm italic text-crimson transition-transform duration-300 group-hover:translate-x-1 sm:text-base"
+            >
+              cv.adiisingh.xyz ↗
             </span>
           </a>
         </motion.div>
