@@ -1,10 +1,10 @@
-
+import { NextResponse } from "next/server";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   if (process.env.SPOTIFY_REFRESH_TOKEN) {
-  const secret = process.env.SPOTIFY_CLIENT_SECRET;
+    return new NextResponse("Spotify is already connected.", { status: 410 });
   }
   const id = process.env.SPOTIFY_CLIENT_ID;
   const secret = process.env.SPOTIFY_CLIENT_SECRET;
